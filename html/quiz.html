@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Origem do Batman: Descubra a tragédia no Beco do Crime, a jornada de treinamento de Bruce Wayne e as histórias clássicas que moldaram o Cavaleiro das Trevas.">
+    <meta name="keywords" content="Batman, Origem, Bruce Wayne, Beco do Crime, DC Comics, Eras dos Quadrinhos">
+    <meta name="robots" content="index, follow">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <!-- TOPO / NAVEGAÇÃO (PADRÃO DO SITE) -->
+    <header>
+        <h1>Portal do Cavaleiro das Trevas</h1>
+        <nav>
+            <a href="index.html">Home</a> |  
+            <a href="origem.html">Origem</a> |
+            <a href="liga.html">Liga da justiça</a> | 
+            <a href="aliados.html">Aliados e Vilões</a> 
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 4: QUIZ TÁTICO DA LIGA -->
+        <section id="quiz">
+            <h3>4. Quiz Tático: Teste seus Conhecimentos</h3>
+            <p>Responda às questões abaixo utilizando os protocolos de verificação da Torre de Vigilância.</p>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+                
+                <!-- PERGUNTAS DE MÚLTIPLA ESCOLHA / SELECT -->
+                <fieldset>
+                    <legend><strong>Questão 1: A Trindade e Arquitetura Tática</strong></legend>
+                    <p>Qual membro da Trindade da DC é responsável pelo planejamento tático e contramedidas sem possuir superpoderes?</p>
+                    
+                    <label for="pergunta1">Escolha a resposta:</label>
+                    <select id="pergunta1" name="pergunta1" required>
+                        <option value="" disabled selected hidden>Selecione uma opção...</option>
+                        <option value="superman">Superman</option>
+                        <option value="batman">Batman</option>
+                        <option value="mulher-maravilha">Mulher-Maravilha</option>
+                        <option value="flash">Flash</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <!-- PERGUNTA COM DATALIST -->
+                <fieldset>
+                    <legend><strong>Questão 2: Infraestrutura e Monitoramento</strong></legend>
+                    <p>Qual é o nome do sistema de monitoramento orbital controlado pela Liga da Justiça?</p>
+                    
+                    <label for="pergunta2">Digite ou escolha a base:</label>
+                    <input type="text" id="pergunta2" name="pergunta2" list="bases-lista" placeholder="Ex: Torre..." required>
+                    <datalist id="bases-lista">
+                        <option value="Torre de Vigilância">
+                        <option value="Batcaverna">
+                        <option value="Hall da Justiça">
+                        <option value="Fortaleza da Solidão">
+                    </datalist>
+                </fieldset>
+
+                <br>
+
+                <!-- PERGUNTA COM INPUT RANGE (NÍVEL DE AMEAÇA) -->
+                <fieldset>
+                    <legend><strong>Questão 3: Avaliação de Risco</strong></legend>
+                    <p>Arraste o controle para indicar qual o nível de perigo estimado do protocolo de segurança alfa <code>TOWER-BABE-01</code> (de 1 a 10):</p>
+                    
+                    <label for="pergunta3">Nível de Perigo:</label>
+                    <input type="range" id="pergunta3" name="pergunta3" min="1" max="10" value="5">
+                </fieldset>
+
+                <br>
+
+                <!-- PERGUNTA COM INPUT DATE -->
+                <fieldset>
+                    <legend><strong>Questão 4: Linha do Tempo e Estreias</strong></legend>
+                    <p>Qual foi a data de lançamento oficial do clássico filme <em>Batman</em> dirigido por Tim Burton nos cinemas?</p>
+                    
+                    <label for="pergunta4">Data de Lançamento:</label>
+                    <input type="date" id="pergunta4" name="pergunta4" required>
+                </fieldset>
+
+                <br>
+
+                <!-- PERGUNTA COM INPUT FILE -->
+                <fieldset>
+                    <legend><strong>Questão 5: Anexo de Evidências</strong></legend>
+                    <p>Faça o upload de um arquivo de relatório ou imagem tática para análise do Batcomputer:</p>
+                    
+                    <label for="pergunta5">Enviar arquivo:</label>
+                    <input type="file" id="pergunta5" name="pergunta5">
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Enviar Respostas do Quiz</button>
+                <button type="reset">Limpar Campos</button>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
