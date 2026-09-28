@@ -6,7 +6,4 @@ Projeto de uma página web simples desenvolvida apenas com **HTML puro** (sem CS
 - Cabeçalho e menu de navegação (`<nav>`).
 - Quiz interativo estruturado com `<fieldset>` e `<legend>`.
 - Uso de recursos de formulário HTML5: `<select>`, `<datalist>`, `<input type="date">`, `<input type="file">`, `<input type="range">`, `required` e `placeholder`.
-
-## 🛠️ Como usar
-1. Salve o código da página como `index.html`.
-2. Abra o arquivo em qualquer navegador web.
+- História resumida do batman e sua atuação na liga da justiça 
